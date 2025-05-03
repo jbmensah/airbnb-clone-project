@@ -248,4 +248,21 @@ All user inputs are validated and sanitized before processing to prevent SQL inj
 
 ---
 
+## 6. CI/CD Pipeline
 
+Continuous Integration and Continuous Deployment (CI/CD) pipelines are automated workflows that help streamline the development, testing, and deployment of applications. In the StayBackend project, CI/CD ensures that new features, bug fixes, and updates are reliably built, tested, and deployed without manual intervention.
+
+---
+
+### Why CI/CD Matters
+- **Faster Development Cycles**: Automates repetitive tasks like testing and building, allowing developers to focus on feature development.
+- **Consistent Deployments**: Reduces human error by standardizing how code is built and deployed across environments.
+- **Immediate Feedback**: Quickly detects bugs or integration issues as code is pushed, improving code quality and reducing downtime.
+
+---
+
+### Tools Used
+- **GitHub Actions**: Automates tasks like running tests, checking code style, and deploying the application after every push or pull request.
+- **Docker**: Packages the application into containers, ensuring consistency across development, staging, and production environments.
+
+---
