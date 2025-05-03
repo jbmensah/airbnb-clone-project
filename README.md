@@ -207,4 +207,45 @@ Implements authentication, authorization, and data protection mechanisms across 
 Automates testing and deployment workflows through GitHub Actions and Docker. This enhances development speed and consistency by minimizing manual errors during build and deployment.
 
 ---
+## 5. API Security
+
+Securing the backend APIs is critical to protecting the platform’s data, maintaining trust with users, and preventing malicious activity. Below are the key security measures implemented in the StayBackend project:
+
+---
+
+### Authentication
+All endpoints are protected using secure authentication mechanisms such as token-based authentication (e.g., JWT). This ensures that only verified users can access protected resources.
+
+**Why it matters**: Prevents unauthorized access to personal user data, booking history, and account settings.
+
+---
+
+### Authorization
+Role-based access control (RBAC) is implemented to ensure users can only perform actions permitted by their role (e.g., guest vs host vs admin).
+
+**Why it matters**: Prevents misuse of system features (e.g., guests modifying property listings) and enforces boundaries between different user roles.
+
+---
+
+### Rate Limiting
+Rate limiting is applied to API endpoints to prevent abuse from bots or brute-force attacks by limiting the number of requests allowed per user or IP within a time frame.
+
+**Why it matters**: Protects the system from denial-of-service attacks and reduces load on the server, ensuring availability for legitimate users.
+
+---
+
+### Data Encryption
+Sensitive data (e.g., passwords, payment details) is encrypted in transit using HTTPS and securely hashed at rest (e.g., using bcrypt for passwords).
+
+**Why it matters**: Protects confidential information from interception and data breaches.
+
+---
+
+### Input Validation & Sanitization
+All user inputs are validated and sanitized before processing to prevent SQL injection, cross-site scripting (XSS), and other injection attacks.
+
+**Why it matters**: Maintains data integrity and prevents malicious code from executing on the server.
+
+---
+
 
