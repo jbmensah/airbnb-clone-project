@@ -33,7 +33,7 @@ The **StayBackend Project** is a real-world simulation of a booking platform ins
 
 ---
 ---
-# Team Roles
+# 1. Team Roles
 
 ## Product Owner
 The product owner defines user stories and manages the product backlog while making sure that the product meets the client's needs.
@@ -61,7 +61,7 @@ Automates deployment processes, manages CI/CD pipelines, and ensures system reli
 
 ---
 ---
-# Technology Stack (Backend)
+# 2. Technology Stack (Backend)
 ## Django (Backend Framework) 
 - **Purpose:** Facilitates rapid development of secure and maintainable web applications by providing a high-level Python web framework.
 
@@ -93,3 +93,75 @@ Automates deployment processes, manages CI/CD pipelines, and ensures system reli
 
 - **Role in Project:** Ensures consistent application behavior across development, testing, and production environments, and automates the deployment process to improve efficiency and reduce manual errors.
 
+---
+---
+# 3. Database Design
+
+This section outlines the core database entities and how they relate to each other in the StayBackend project.
+
+### Key Entities & Fields
+
+---
+
+### Users
+Represents both property owners (hosts) and guests.
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `user_type` (e.g., "host" or "guest")
+
+---
+
+### Properties
+Represents accommodations listed by users.
+- `id` (Primary Key)
+- `title`
+- `description`
+- `location`
+- `host_id` (Foreign Key → Users)
+
+---
+
+### Bookings
+Captures reservation data between users and properties.
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `check_in_date`
+- `check_out_date`
+
+---
+
+### Reviews
+Feedback left by guests after their stay.
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `rating` (1–5)
+- `comment`
+
+---
+
+### Payments
+Tracks payment details for bookings.
+- `id` (Primary Key)
+- `booking_id` (Foreign Key → Bookings)
+- `amount`
+- `payment_method`
+- `payment_status`
+
+---
+
+### Entity Relationships
+
+- A **User** can have **multiple Properties** (if they are a host).
+- A **User** can make **multiple Bookings** (if they are a guest).
+- A **Booking** is linked to **one Property** and **one User**.
+- A **Property** can have **many Bookings** and **many Reviews**.
+- A **Review** is associated with **one User** and **one Property**.
+- A **Payment** is associated with **one Booking**.
+
+---
+
+This relational structure ensures data normalization, minimizes redundancy, and supports the application's key workflows like listing properties, making bookings, processing payments, and collecting feedback.
