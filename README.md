@@ -152,7 +152,7 @@ Automates testing, builds, and deployments for development efficiency.
 Uses JWT tokens for secure access control.
 
 ### Authorization
-Implements RBAC to restrict user actions based on their role.
+Implements RBAC (Role-Based Access Control) to restrict user actions based on their role.
 
 ### Rate Limiting
 Throttles requests to prevent abuse and server overload.
