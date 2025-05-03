@@ -165,3 +165,46 @@ Tracks payment details for bookings.
 ---
 
 This relational structure ensures data normalization, minimizes redundancy, and supports the application's key workflows like listing properties, making bookings, processing payments, and collecting feedback.
+
+
+## 4. Feature Breakdown
+
+This section outlines the core features of the StayBackend project and their roles in delivering a functional, scalable Airbnb-style booking platform.
+
+---
+
+### User Management
+Enables users to register, log in, and manage their profiles. This feature supports both guests and hosts, allowing personalized experiences and secure authentication mechanisms.
+
+---
+
+### Property Management
+Allows hosts to list new properties with detailed descriptions, images, and location data. It forms the backbone of the platform by enabling property discoverability and host control.
+
+---
+
+### Booking System
+Handles the reservation flow between guests and hosts. Users can check availability, select dates, and confirm bookings, ensuring seamless scheduling and occupancy management.
+
+---
+
+### Review & Rating System
+Enables guests to leave feedback on their stay and rate properties. This feature builds trust and improves service quality by encouraging accountability from hosts and guests alike.
+
+---
+
+### Payment Integration
+Supports payment processing for confirmed bookings. This ensures a smooth financial transaction flow while maintaining security and transparency for both users and platform administrators.
+
+---
+
+### API Security
+Implements authentication, authorization, and data protection mechanisms across all endpoints. It ensures that user data is secure and system integrity is maintained.
+
+---
+
+### CI/CD Pipeline Integration
+Automates testing and deployment workflows through GitHub Actions and Docker. This enhances development speed and consistency by minimizing manual errors during build and deployment.
+
+---
+
