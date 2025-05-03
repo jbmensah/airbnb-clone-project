@@ -12,8 +12,8 @@ The **StayBackend Project** is a real-world simulation of a booking platform ins
 - Integrate CI/CD pipelines for smooth, automated deployment
 - Document architecture, processes, and project decisions effectively
 ---
-## Technology Stack
-- **Backend Framework:** Django
+## Technology Stack (Backend)
+- **Django (Backend Framework):** 
 - **Database:** MySQL
 - **API Technologies:** RESTful APIs and GraphQL
 - **Version Control & Collaboration:** Git & GitHub
@@ -59,5 +59,37 @@ Designers create user-friendly and intuitive interactions and ensure user's visu
 ## DevOps Engineer
 Automates deployment processes, manages CI/CD pipelines, and ensures system reliability and scalability.
 
+---
+---
+# Technology Stack (Backend)
+## Django (Backend Framework) 
+- **Purpose:** Facilitates rapid development of secure and maintainable web applications by providing a high-level Python web framework.
 
+- **Role in Project:** Manages server-side logic, handles HTTP requests/responses, and integrates with the database using its built-in Object-Relational Mapping (ORM) system.
+## MySQL (Database)
+- **Purpose:** Serves as a relational database management system (RDBMS) to store, manage, and retrieve structured data efficiently.
+
+- **Role in Project:** Stores essential data such as user profiles, property listings, bookings, and reviews, ensuring data integrity and supporting complex queries.
+
+## RESTful APIs and GraphQL (API Technologies)
+- **Purpose:** Enable communication between the frontend and backend, allowing clients to interact with the server to perform operations like data retrieval and updates.
+
+- **Role in Project:**
+	- **RESTful APIs:** Provide standardized endpoints for CRUD (Create, Read, Update, Delete) operations.
+
+	- **GraphQL:** Offers flexible data querying capabilities, allowing clients to request exactly the data they need, reducing over-fetching and under-fetching.
+
+## Git & GitHub (Version Control & Collaboration)
+- **Purpose:** Git is a distributed version control system for tracking changes in source code, while GitHub is a cloud-based platform for hosting Git repositories and facilitating collaboration.
+
+- **Role in Project:** Enables multiple developers to work concurrently, manage code versions, conduct code reviews, and collaborate effectively through features like pull requests and issue tracking.
+
+## Docker & GitHub Actions (Deployment & CI/CD)
+- **Purpose:**
+
+	- **Docker:** Provides containerization to package applications and their dependencies, ensuring consistency across different environments.
+
+	- **GitHub Actions:** Automates workflows for building, testing, and deploying code, facilitating Continuous Integration and Continuous Deployment (CI/CD).
+
+- **Role in Project:** Ensures consistent application behavior across development, testing, and production environments, and automates the deployment process to improve efficiency and reduce manual errors.
 
